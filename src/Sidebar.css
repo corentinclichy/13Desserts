@@ -1,0 +1,33 @@
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 91px;
+  height: 100%;
+  width: 99px;
+  background-color: rgba(255, 255, 10, 0.623);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-left: 1px solid black;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 50% 50%;
+  }
+  to {
+    background-position: 50% 100%;
+  }
+}
+
+.sidebar__animBanner {
+  height: 100%;
+  width: 100%;
+  background-image: url("./logo_eteSuper.png");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: 50px;
+  animation: animatedBackground 10s linear infinite;
+  padding-left: 10px;
+}
